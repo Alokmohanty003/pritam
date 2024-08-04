@@ -1,0 +1,26 @@
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('/bg.jpg') no-repeat center center;
+  background-size: cover;
+  z-index: -1; /* Ensure the background is behind all content */
+}
+
+@media (max-width: 768px) {
+  .background {
+    background-position: center; /* Center the image on tablets */
+    background-size: cover; /* Ensure the image covers the viewport */
+  }
+}
+
+@media (max-width: 480px) {
+  .background {
+    background-position: center; /* Center the image on mobile devices */
+    background-size: cover; /* Ensure the image covers the viewport */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    height: 50vh; /* Set height to 50% of the viewport height on mobile devices */
+  }
+}

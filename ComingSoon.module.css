@@ -1,0 +1,44 @@
+.comingSoon {
+  overflow: hidden;
+  white-space: nowrap;
+ 
+}
+
+.comingSoon p {
+  display: inline-block;
+  font-size: 20px; /* Adjust the font size as needed */
+  animation: trainLine 120s linear infinite; /* Increased duration to make it slower */
+}
+
+.scrollContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+ 
+  animation: scroll 20s linear infinite; /* Endless scrolling */
+}
+
+.comingSoonText {
+  display: inline-block;
+  padding: 0 ; /* Space between repeated text */
+  font-size: 0.5rem; /* Adjust size as needed */
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font if imported */
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes trainLine {
+  100% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
