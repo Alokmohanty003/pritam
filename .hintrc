@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "manifest-is-valid": "off",
+    "no-inline-styles": "off",
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "overscroll-behavior-x",
+          "backdrop-filter"
+        ]
+      }
+    ]
+  }
+}
